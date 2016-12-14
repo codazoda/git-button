@@ -6,4 +6,9 @@
 git checkout -b 1234567
 ```
 
-This code is a work in progress and will become a chrome extension when I'm done with it.
+This code is now working but is in the early stages.
+
+## To-Do
+
+- Grab the real story ID from the page
+- Fix the hover over styling

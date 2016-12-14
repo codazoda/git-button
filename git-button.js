@@ -1,3 +1,40 @@
+/**
+ * Get the closest matching element up the DOM tree.
+ * @private
+ * @param  {Element} elem     Starting element
+ * @param  {String}  selector Selector to match against
+ * @return {Boolean|Element}  Returns null if not match found
+ */
+function getClosest( elem, selector ) {
+
+    // Element.matches() polyfill
+    if (!Element.prototype.matches) {
+        Element.prototype.matches =
+            Element.prototype.matchesSelector ||
+            Element.prototype.mozMatchesSelector ||
+            Element.prototype.msMatchesSelector ||
+            Element.prototype.oMatchesSelector ||
+            Element.prototype.webkitMatchesSelector ||
+            function(s) {
+                var matches = (this.document || this.ownerDocument).querySelectorAll(s),
+                    i = matches.length;
+                while (--i >= 0 && matches.item(i) !== this) {}
+                return i > -1;
+            };
+    }
+
+    // Get closest match
+    for ( ; elem && elem !== document; elem = elem.parentNode ) {
+        if ( elem.matches( selector ) ) return elem;
+    }
+
+    return null;
+}
+
+function underscored(str) {
+  return str.trim().replace(/[\(\)\+\-]/g,"_").replace(/([a-z\d])([A-Z]+)/g, '$1_$2').replace(/[-\s]+/g, '_').toLowerCase();
+}
+
 function addGitButton() {
     // Grab any action div's
     var editActions = document.querySelectorAll("div.actions");
@@ -5,6 +42,10 @@ function addGitButton() {
     if (editActions.length > 0) {
         // Loop through the action divs
         editActions.forEach(function(singleAction) {
+            var story = getClosest(singleAction, ".story");
+            var textArea = story.querySelectorAll("textarea.name");
+            var title = underscored(textArea[0].defaultValue);
+
             // Get the id copy button
             var idCopyButton = singleAction.childNodes[5];
             // If the child node isn't undefined and it does not already have a git button, add one
@@ -23,7 +64,7 @@ function addGitButton() {
                     button.type = "button";
                     button.className = "autosaves clipboard_button hoverable capped story_copy_git";
                     button.title = "Copy Git branch command to your clipboard";
-                    button.setAttribute("data-clipboard-text", "git checkout -b " + storyId);
+                    button.setAttribute("data-clipboard-text", "git checkout -b " + storyId + "_" + title);
                     // TODO: Change the icon to https://raw.githubusercontent.com/primer/octicons/master/lib/svg/git-branch.svg
                     // Get the id copy button
                     var idCopyButton = singleAction.childNodes[5]; // The 5th child is the id button and field

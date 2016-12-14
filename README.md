@@ -26,6 +26,10 @@ The open source version can be cloned from the [Git Button project on GitHub](ht
 
 This software is open source, distributed under the MIT license.
 
+## Author
+
+*Git Button* was created by [Joel Dare](mailto:joel@joeldare.com).
+
 ## To-Do
 
 - Fix the hover over styling

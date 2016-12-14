@@ -10,5 +10,4 @@ This code is now working but is in the early stages.
 
 ## To-Do
 
-- Grab the real story ID from the page
 - Fix the hover over styling

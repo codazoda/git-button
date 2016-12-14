@@ -7,7 +7,7 @@
     ],
     "name": "Git Button",
     "description": "Add a copy button to pivotal so you can paste a git command that creates a new branch.",
-    "homepage_url": "http://gitbutton.joeldare.com",
+    "homepage_url": "http://git-button.joeldare.com",
     "icons": {
         "16": "icon-16.png",
         "48": "icon-48.png",

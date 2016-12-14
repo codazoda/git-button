@@ -2,11 +2,11 @@
 
 *Git Button* adds a new copy button to each story in Pivotal Tracker. It copy's the following code to the clipboard so that it can be pasted into a terminal.
 
-![Screenshot of Git Button in Pivotal](http://git-button.joeldare.com/screenshot-640x400.png)
-
 ```
 git checkout -b 1234567
 ```
+
+![Screenshot of Git Button in Pivotal](http://git-button.joeldare.com/screenshot-640x400.png)
 
 ## Installation
 

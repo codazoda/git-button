@@ -10,7 +10,7 @@ git checkout -b 1234567
 
 ## Installation
 
-Open the [Git Button extension]() from the Chrome Web Store by clicking *Add to Chrome* (coming soon).
+Open the [Git Button extension](https://chrome.google.com/webstore) from the Chrome Web Store by clicking *Add to Chrome* (coming soon).
 
 ## Source Code
 

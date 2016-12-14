@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+ 
+<head>
+ 
+    <title>git-button</title>
+ 
+    <!-- Javascript -->
+    <script src="main.js"></script>
+ 
+    <!-- Internal CSS -->
+    <style>
+        * { box-sizing: border-box; }
+        body { background-color: white; margin: 0; padding: 0; font-family: sans-serif; font-size: 16px; line-height: 1.5em; }
+        h1 { padding-bottom: 0.75em; border-bottom: 1px solid #eee; }
+        h2 { padding-bottom: 0.75em; border-bottom: 1px solid #eee; }
+        p { margin-bottom: 10px; }
+        pre { margin: 25px 0 25px 0; }
+        pre code { padding: 10px; }
+        code { background-color: #f7f7f7; }
+        img { width: 100%; }
+
+        .menu { background-color: #FAFAFA; height: 48px; line-height: 48px; padding: 0 4px 0 4px; border-bottom: 1px solid #E5E5E5; }
+        .menu img { width: 40px; height: 40px; margin: 4px 4px 4px 4px; float: left; }
+        .menu-content { max-width: 830px; margin: 0 auto 0 auto; background-color: yellow; }
+        .menu-items { float: right; margin-right: 10px; }
+        .menu-items a { text-decoration: none; }
+        .appname { margin-left: 8px; font-weight: bold; font-size: 18px; }
+        .readme { margin: 20px; max-width: 800px; }
+        .created { font-size: 12px; text-align: center; color: #E5E7E9; margin-top: 20px; }
+        .created a { color: #E5E7E9; }
+
+        @media (min-width: 839px) {
+            .readme { margin: 20px auto 20px auto; }
+        }
+    </style>
+ 
+</head>
+ 
+<body>
+ 
+    <div class="menu">
+        <!--
+        <div class="menu-content">
+            <a href="http://www.joeldare.com">
+            <img src="data:...">
+            </a>
+            <span class="menu-items"><a href="">About</a></span>
+        </div>
+        -->
+    </div>
+
+    <div class="readme">
+        <h1>Git Button for Pivotal</h1>
+<p><em>Git Button</em> adds a new copy button to each story in Pivotal Tracker. It copy's the following code to the clipboard so that it can be pasted into a terminal.</p>
+<pre><code>git checkout -b 1234567</code></pre>
+<h2>Installation</h2>
+<p>Open the [Git Button extension]() from the Chrome Web Store by clicking <em>Add to Chrome</em> (coming soon).</p>
+<h2>Source Code</h2>
+<p>The open source version can be cloned from the <a href="https://github.com/codazoda/git-button">Git Button project on GitHub</a> and installed from there.</p>
+<ul>
+<li>Clone the repo</li>
+<li>Open Extensions (Menu, More Tools, Extensions) in Google Chrome</li>
+<li>Check the &quot;Developer mode&quot; checkbox</li>
+<li>Click &quot;Load unpacked extension&quot;</li>
+<li>Point it to the directory where you cloned the repo</li>
+</ul>
+<h2>License</h2>
+<p>This software is open source, distributed under the MIT license.</p>
+<h2>To-Do</h2>
+<ul>
+<li>Fix the hover over styling</li>
+</ul>
+    </div>
+
+    <a target="about">
+    <div class="about">
+        <p></p>
+    </div>
+
+    <p class="created">created with <a href="http://ghsite.joeldare.com">ghsite</a></p>
+ 
+</body>
+ 
+</html>

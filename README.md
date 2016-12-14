@@ -6,7 +6,23 @@
 git checkout -b 1234567
 ```
 
-This code is now working but is in the early stages.
+## Installation
+
+Open the [Git Button extension]() from the Chrome Web Store by clicking *Add to Chrome* (coming soon).
+
+## Source Code
+
+The open source version can be cloned from the [Git Button project on GitHub](https://github.com/codazoda/git-button) and installed from there.
+
+- Clone the repo
+- Open Extensions (Menu, More Tools, Extensions) in Google Chrome
+- Check the "Developer mode" checkbox
+- Click "Load unpacked extension"
+- Point it to the directory where you cloned the repo
+
+## License
+
+This software is open source, distributed under the MIT license.
 
 ## To-Do
 

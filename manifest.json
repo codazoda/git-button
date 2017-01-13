@@ -5,8 +5,8 @@
             "js": ["git-button.js"]
         }
     ],
-    "name": "Git Button",
-    "description": "Add a copy button to pivotal so you can paste a git command that creates a new branch.",
+    "name": "Git Button for Pivotal Tracker",
+    "description": "Add a copy button to pivotal for creating new git branches using the current story id.",
     "homepage_url": "http://git-button.joeldare.com",
     "icons": {
         "16": "icon-16.png",
@@ -16,6 +16,6 @@
     "permissions": [
         "https://www.pivotaltracker.com/*"
     ],
-    "version": "16.12.14",
+    "version": "17.01.13",
     "manifest_version": 2
 }

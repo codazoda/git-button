@@ -16,6 +16,6 @@
     "permissions": [
         "https://www.pivotaltracker.com/*"
     ],
-    "version": "17.01.13",
+    "version": "17.1.13",
     "manifest_version": 2
 }
